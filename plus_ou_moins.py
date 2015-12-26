@@ -4,6 +4,7 @@
 from random import randint
 
 nombreADeviner = randint(30,100)
+print("_PHASE_TEST_ nombreADeviner :",nombreADeviner) #Affichage uniquement en phase de test/debug
 nombreJoueur = 0
 while nombreJoueur!=nombreADeviner : #Le jeu tourne tant que le joueur a choisi un nombre different du juste prix
 
