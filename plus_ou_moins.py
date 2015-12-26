@@ -1,6 +1,6 @@
 #!/usr/bin/python3.4
 # -*-coding:Utf-8 -*
-# Jeu "PLUS OU MOINS" - Version 2.1
+# Jeu "PLUS OU MOINS" - Version 2.2
 from random import randint
 
 nombreADeviner = randint(30,100)
@@ -23,6 +23,7 @@ while nombreJoueur!=nombreADeviner : #Le jeu tourne tant que le joueur a choisi 
 			nombreTentatives = nombreTentatives + 1
 		else :
 			print("Bravo, vous avez trouvé le juste prix. On vous offre un sejour à Paris.")
+			nombreTentatives = nombreTentatives + 1
 	else :
 		print("Entrez un nombre entier !")
 print("Vous avez eu besoin de",nombreTentatives,"tentative(s).")
