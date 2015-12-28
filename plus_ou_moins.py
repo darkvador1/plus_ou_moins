@@ -1,6 +1,6 @@
 #!/usr/bin/python3.4
 # -*-coding:Utf-8 -*
-# Jeu "PLUS OU MOINS" - Version 3.1
+# Jeu "PLUS OU MOINS" - Version 3.2
 from random import randint
 
 nombreADeviner = randint(30,100)
@@ -8,6 +8,7 @@ print("_PHASE_TEST_ nombreADeviner :",nombreADeviner) #Affichage uniquement en p
 nombreDuJoueur = 0
 nombreTentatives = 0
 finPartie = False
+gagne = False
 while not(finPartie) : #Le jeu tourne tant que le joueur a choisi un nombre different du juste prix
 
 	nombreDuJoueur = input("Essayez de deviner le nombre entre 30 et 100 : ")
@@ -26,6 +27,7 @@ while not(finPartie) : #Le jeu tourne tant que le joueur a choisi un nombre diff
 			print("Bravo, vous avez trouvé le juste prix. On vous offre un sejour à Paris.")
 			nombreTentatives = nombreTentatives + 1
 			finPartie = True
+			gagne = True
 	else :
 		print("Entrez un nombre entier !")
 
@@ -33,5 +35,5 @@ while not(finPartie) : #Le jeu tourne tant que le joueur a choisi un nombre diff
 		print("Vous avez atteint le maximum d'essais (10).")
 		print("Le juste prix était :",nombreADeviner)
 		finPartie = True
-
-print("Vous avez eu besoin de",nombreTentatives,"tentative(s).")
+if gagne :
+	print("Vous avez eu besoin de",nombreTentatives,"tentative(s).")
