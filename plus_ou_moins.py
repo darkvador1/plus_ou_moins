@@ -1,6 +1,6 @@
 #!/usr/bin/python3.4
 # -*-coding:Utf-8 -*
-# Jeu "PLUS OU MOINS" - Version 4.2
+# Jeu "PLUS OU MOINS" - Version 5.1
 from random import randint
 
 nombreADeviner = randint(30,100)
@@ -28,6 +28,9 @@ while not(finPartie) : #Le jeu tourne tant que le joueur a choisi un nombre diff
 			nombreTentatives = nombreTentatives + 1
 			finPartie = True
 			gagne = True
+	elif nombreDuJoueur=="triche" :
+		print("Vous êtes en mode triche !")
+		print("On vous donne la reponse du juste prix :", nombreADeviner)
 	else :
 		print("Entrez un nombre entier !")
 
