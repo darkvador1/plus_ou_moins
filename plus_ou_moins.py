@@ -1,6 +1,6 @@
 #!/usr/bin/python3.4
 # -*-coding:Utf-8 -*
-# Jeu "PLUS OU MOINS" - Version 2.2
+# Jeu "PLUS OU MOINS" - Version 3.1
 from random import randint
 
 nombreADeviner = randint(30,100)
