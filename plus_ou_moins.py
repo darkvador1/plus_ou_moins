@@ -1,6 +1,6 @@
 #!/usr/bin/python3.4
 # -*-coding:Utf-8 -*
-# Jeu "PLUS OU MOINS" - Version 4.1
+# Jeu "PLUS OU MOINS" - Version 4.2
 from random import randint
 
 nombreADeviner = randint(30,100)
@@ -31,7 +31,7 @@ while not(finPartie) : #Le jeu tourne tant que le joueur a choisi un nombre diff
 	else :
 		print("Entrez un nombre entier !")
 
-	if nombreTentatives >=5:
+	if nombreTentatives>=5 and nombreTentatives!=10:
 		print("Attention il ne vous reste plus que", 10-nombreTentatives,"tentatives.")
 		print("Faites attention ou sinon vous ne gagnerez pas un voyage a Paris..."  )
 
